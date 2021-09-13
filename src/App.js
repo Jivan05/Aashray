@@ -5,6 +5,7 @@ import NewGoal from './goals/components/NewGoal/NewGoal';
 import Users from './users/pages/Users';
 import Ngo from './ngo/pages/Ngo';
 import MainNavigation from './shared/components/Navigation/MainNavigation';
+// import Report_homeless from './Report_homeless/Report';
 import './App.css';
 
 const App = () => {
@@ -33,18 +34,41 @@ const App = () => {
             <h1>Users</h1>
               <Users/>       
             </Route>
-            <Route path="/report_homeless" exact>   
-              <h1>Report Homeless</h1>
+            <Route path="/Report_homeless" exact>   
+              <h1>Report to your nearest Ngo</h1>
+              {/* <link to ="./Report_homeless">Get link</link> */}
+              <a href=" "></a>
+              <p>Click the link to inform Ngo </p>
+              <ul>
+                <li> 
+                   <a href="Report.js">Report us</a> 
+                  {/* <script src="Report.js"></script> */}
+                </li>
+              </ul> 
             </Route>
             <Route path="/ngo" exact>
-              <h1>NGO</h1>
+              <h1>Connect with NGO</h1>
               <Ngo/>
             </Route>
             <Route path="/crime" exact>
               <h1>Crime</h1>
             </Route>
             <Route path="/ways_to_help" exact>
-              <h1>Ways to help</h1> 
+              <h1>Choose how do you want to help</h1> 
+              <ol type="1">
+                <li>Donations</li>
+                <ul>
+                  <li>Fill up the below form</li>
+                  <a href="Donations.js">Click here</a>
+                </ul>
+                <li>Shelter</li>
+                <ul>
+                  <li>Fill up the below form</li>
+                  <a href="Shelter.js">Click here</a>
+                </ul>
+                
+                
+              </ol>
             </Route>
           <Redirect to="/" />
           </Switch>

@@ -1,5 +1,6 @@
 import React from 'react';
 import NgoList from '../components/NgoList';
+import {NgoMain} from '../components/NgoMain';
 
 const Ngo = () => {
     const NGO = [
@@ -17,7 +18,7 @@ const Ngo = () => {
         },
         {
         id:'u3',
-        name:"Jivan Jyoti",
+        name:"Jivanjyoti",
         image:"https://picsum.photos/200" , 
         places: 4
         },
@@ -28,8 +29,12 @@ const Ngo = () => {
         places: 4
         },
               ];
-  
-    return <NgoList items={NGO}/>
+            //   <NgoMain/>
+    return (
+    <NgoList items={NGO}/>,
+    <NgoMain/>
+    )
+    
 };
 
 export default Ngo

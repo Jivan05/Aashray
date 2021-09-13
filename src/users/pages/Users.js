@@ -17,7 +17,7 @@ const Users = () => {
         },
         {
         id:'u3',
-        name:"Jivan Jyoti",
+        name:"Jivanjyoti",
         image:"https://picsum.photos/200" , 
         places: 4
         },
